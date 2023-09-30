@@ -1,0 +1,45 @@
+<div class="background">
+    <div class="screen">
+      <div class="function-screen">{{funcT}}</div>
+      <div class="number-screen">{{calValue | number}}</div>
+    </div>
+  
+    <div class="calculator-button">
+  
+      <div class="button-rows">
+        <button class="clear" (click)="onClickValue('c', 'function')">C</button>
+        <button class="function" (click)="onClickValue('%', 'function')">%</button>
+        <button class="function" (click)="onClickValue('/', 'function')">/</button>
+      </div>
+  
+      <div class="button-rows">
+        <button class="number" (click)="onClickValue('7', 'number')">7</button>
+        <button class="number" (click)="onClickValue('8', 'number')">8</button>
+        <button class="number" (click)="onClickValue('9', 'number')">9</button>
+        <button class="function" (click)="onClickValue('*', 'function')">x</button>
+      </div>
+  
+      <div class="button-rows">
+        <button class="number" (click)="onClickValue('4', 'number')">4</button>
+        <button class="number" (click)="onClickValue('5', 'number')">5</button>
+        <button class="number" (click)="onClickValue('6', 'number')">6</button>
+        <button class="function" (click)="onClickValue('-', 'function')">-</button>
+      </div>
+  
+      <div class="button-rows">
+        <button class="number" (click)="onClickValue('1', 'number')">1</button>
+        <button class="number" (click)="onClickValue('2', 'number')">2</button>
+        <button class="number" (click)="onClickValue('3', 'number')">3</button>
+        <button class="function" (click)="onClickValue('+', 'function')">+</button>
+      </div>
+  
+      <div class="button-rows">
+        <button class="clear" (click)="onClickValue('0', 'number')">0</button>
+        <button class="function" (click)="onClickValue('.', 'function')">.</button>
+        <button class="function" (click)="onClickValue('=', 'function')">=</button>
+      </div>
+  
+    </div>
+  </div>
+  
+  
